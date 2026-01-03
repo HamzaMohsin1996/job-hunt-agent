@@ -1,7 +1,7 @@
 from pydantic_ai import Agent
 
 fit_review_agent = Agent(
-  model="ollama:llama3.1",
+ model="ollama:llama3.1",
     system_prompt="""
 You are an expert technical recruiter.
 

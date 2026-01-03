@@ -4,3 +4,4 @@ pydantic-ai
 gradio
 pypdf
 python-dotenv
+trafilatura

@@ -1,5 +1,4 @@
 from graph.state import JobHuntState
-
 from agents.factory import create_agent
 from agents.cover import COVER_PROMPT
 from agents.networking import NETWORKING_PROMPT
@@ -8,11 +7,9 @@ from agents.review import REVIEW_PROMPT
 
 def cover_node(state: JobHuntState) -> JobHuntState:
     agent = create_agent(state.model_name, COVER_PROMPT)
-
     result = agent.run_sync(
         f"CV:\n{state.cv_text}\n\nJob Description:\n{state.job_description}"
     )
-
     state.cover_letter = result.output
     return state
 
