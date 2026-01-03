@@ -1,0 +1,6 @@
+openai
+langgraph
+pydantic-ai
+gradio
+pypdf
+python-dotenv
