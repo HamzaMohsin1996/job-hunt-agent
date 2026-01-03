@@ -1,4 +1,5 @@
 # Job Hunt Multi-Agent System
+source venv/bin/activate
 
 Run locally:
 ```bash
